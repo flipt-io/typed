@@ -6,5 +6,5 @@
 ## Usage
 
 ```
-npx @flipt-io/typed-cli --format ts
+npx @flipt-io/typed-cli --lang ts --input /path/to/features.yml
 ```
