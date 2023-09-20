@@ -1,0 +1,56 @@
+namespace: backend
+flags:
+  - key: awesomeNewFeature
+    name: Awesome New Feature
+    enabled: true
+    variants:
+      - key: enabled
+        name: Enabled
+      - key: disabled
+        name: Disabled
+    rules:
+      - segment: internal-users
+        rank: 1
+        distributions:
+          - variant: enabled
+            rollout: 100
+      - segment: all-users
+        rank: 2
+        distributions:
+          - variant: enabled
+            rollout: 20
+          - variant: disabled
+            rollout: 80
+  - key: awesomeNewFeature2
+    name: Awesome New Feature with no variants
+    enabled: true
+    rules:
+      - segment: internal-users
+        rank: 1
+        distributions:
+          - variant: enabled
+            rollout: 100
+      - segment: all-users
+        rank: 2
+        distributions:
+          - variant: enabled
+            rollout: 20
+          - variant: disabled
+            rollout: 80
+
+segments:
+  - key: internal-users
+    name: Internal Users
+    constraints:
+      - type: STRING_COMPARISON_TYPE
+        property: organization
+        operator: eq
+        value: internal
+      - type: NUMBER_COMPARISON_TYPE
+        property: age
+        operator: eq
+        value: internal
+    match_type: ALL_MATCH_TYPE
+  - key: all-users
+    name: All Users
+    match_type: ALL_MATCH_TYPE
