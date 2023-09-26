@@ -1,9 +1,9 @@
 {
-  "name": "@flipt-io/gen",
+  "name": "@flipt-io/typed",
   "version": "0.1.0",
-  "repository": "https://github.com/flipt-io/gen",
+  "repository": "https://github.com/flipt-io/typed",
   "bin": {
-    "flipt-gen": "./dist/cli/index.js"
+    "flipt-typed": "./dist/cli/index.js"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
