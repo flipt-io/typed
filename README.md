@@ -1,10 +1,10 @@
-# Flipt Typed CLI
+# Flipt Gen
 
-[![npm](https://img.shields.io/npm/v/@flipt-io/flipt?label=%40flipt-io%2Ftyped-cli)](https://www.npmjs.com/package/@flipt-io/typed-cli)
+[![npm](https://img.shields.io/npm/v/@flipt-io/flipt?label=%40flipt-io%2Fgen)](https://www.npmjs.com/package/@flipt-io/gen)
 ![status](https://img.shields.io/badge/status-hardening-orange)
 
 ## Usage
 
 ```
-npx @flipt-io/typed-cli --lang ts --input /path/to/features.yml
+npx @flipt-io/gen --lang ts --input /path/to/features.yml
 ```
