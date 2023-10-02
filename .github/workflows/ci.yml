@@ -51,7 +51,7 @@ jobs:
 
       - name: Publish to npm
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           pnpm publish --no-git-checks --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
