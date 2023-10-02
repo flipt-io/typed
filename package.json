@@ -1,6 +1,6 @@
 {
   "name": "@flipt-io/typed",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": "https://github.com/flipt-io/typed",
   "bin": {
     "flipt-typed": "./dist/cli/index.js"
