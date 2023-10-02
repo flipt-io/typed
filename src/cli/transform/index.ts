@@ -37,14 +37,11 @@ export function registerTransformCommand(cli: CAC): void {
   }
 
   cli
-    .command("", "Generate types from Flipt export", {
+    .command("", "Generate types from Flipt features.yml", {
       allowUnknownOptions: true,
       ignoreOptionDefaultValue: true,
     })
-    .option(
-      "--input <path>",
-      "Path to export file. You can also supply stdin instead.",
-    )
+    .option("--input <path>", "Path to features.yml file.")
     .option(
       "--lang <language>",
       `Output language. Supported: ${supportedLanguagesText}`,

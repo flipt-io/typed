@@ -3,7 +3,7 @@ import cac from "cac";
 import { registerTransformCommand } from "./transform";
 
 async function main(): Promise<void> {
-  const cli = cac("flipt-typed-cli");
+  const cli = cac("typed");
 
   registerTransformCommand(cli);
 
