@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    Generate static types from <a href="https://flipt.io">Flipt</a> features.
+    Generate static types from <a href="https://flipt.io">Flipt</a> features. Validate your code against your feature flags.
 </p>
 
 ## Overview
@@ -28,7 +28,7 @@ Why would you want to use Flipt Typed? Here are a few reasons:
 - Get IDE autocompletion and enable a safer and more streamlined development experience when using Flipt feature flags
 - Avoid typos and other errors when integrating Flipt flag evaluation into your codebase
 - Ensure that your code is always in sync with your Flipt features configuration
-- Enable easier refactoring/cleanup of unused flags with Go To Definition and Find References
+- Enable easier refactoring/cleanup of unused flags with Go To Definition and Find References in your IDE
 
 ## Usage
 
@@ -41,7 +41,7 @@ Why would you want to use Flipt Typed? Here are a few reasons:
     ```console
     npx @flipt-io/typed --lang ts --input /path/to/features.yml
 
-    npx @flipt-io/typed --lang ts --input /path/to/features.yml > /path/to/types.ts
+    npx @flipt-io/typed --lang ts --input /path/to/features.yml > /types/flipt.ts
     ```
 
 1. Use the generated types in your code:
@@ -51,3 +51,17 @@ Why would you want to use Flipt Typed? Here are a few reasons:
 
     let flag: Flag = { key: "new-feature", value: true };
     ```
+
+## Contributing
+
+We welcome contributions to Flipt Typed! Please see our [contributing guide](CONTRIBUTING.md) for more information.
+
+Found a bug or have a feature request? [Open an issue](https://github.com/flipt-io/typed/issues/new).
+
+## License
+
+Flipt Typed is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+Thanks to @graup for the initial idea and prototype implementation of Flipt Typed!
