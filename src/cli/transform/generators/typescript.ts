@@ -32,7 +32,7 @@ function getAstNodes(document: Document) {
           factory.createPropertySignature(
             undefined,
             factory.createIdentifier("value"),
-            undefined,
+            factory.createToken(ts.SyntaxKind.QuestionToken),
             flag.variants
               ? factory.createUnionTypeNode(
                   flag.variants?.map((variant) =>
